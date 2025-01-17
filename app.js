@@ -144,10 +144,12 @@ console.log('Listening on port 3000...');  */
 
 const express = require('express');
 const app = express();
+const lesson1Controller = require('./controllers/lesson1');
 
-app.get('/', (req, res) => {
-    res.send("Hello papu lindo");
-});
+
+app.get('/', lesson1Controller.emilyRoute);
+app.get('/hannah', lesson1Controller.hannahRoute);
+
 
 const port = 3000;
 
