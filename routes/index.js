@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router(); // define las rutas principales para la aplicación utilizando Express
 
 //router.get('/', (req, res) => { res.send('Hello World papu')});
 
