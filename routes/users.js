@@ -7,4 +7,10 @@ router.get('/', usersController.getALL); // lista de todos los usuarios mediante
 
 router.get('/:id', usersController.getSingle); // un usuario específico usando su identificador (id)
 
+router.post('/', usersController.createUser); // add
+
+router.put('/:id', usersController.updateUser); //update
+
+router.delete('/:id', usersController.deleteUser); //delete
+
 module.exports = router; // se exporta
