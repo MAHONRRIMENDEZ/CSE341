@@ -2,6 +2,7 @@ const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId; //ambos usan mongodb.getDatabase() para acceder a la colección "users" de la base de datos y los camb  formato JSON
 
 const getALL = async (req, res) => { //  obtiene todos los usuarios de la base de datos, los convierte a un arreglo con toArray() 
+    //#swagger.tags=['Hellow World]
     const result = await mongodb.getDatabase().db().collection('users').find();
     result.toArray().then((users) => {
         res.setHeader('Content-Type', 'application/json'); ////////////  
@@ -11,6 +12,7 @@ const getALL = async (req, res) => { //  obtiene todos los usuarios de la base d
 };
 
 const getSingle = async (req, res) => { //busca un usuario específico utilizando un ObjectId basado en el id recibido como parámetro en la URL
+    //#swagger.tags=['Hellow World]
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection('users').find({ _id: userId });
     result.toArray().then((users) => {
@@ -20,6 +22,7 @@ const getSingle = async (req, res) => { //busca un usuario específico utilizand
 };
 
 const createUser = async (req, res) => {
+    //#swagger.tags=['Hellow World]
     const user = {
         email: req.body.email,
         username: req.body.username,
@@ -35,6 +38,7 @@ const createUser = async (req, res) => {
 };
 
 const updateUser = async (req, res) => {
+    //#swagger.tags=['Hellow World]
     const userId = new ObjectId(req.params.id);
     const user = {
         email: req.body.email,
@@ -52,6 +56,7 @@ const updateUser = async (req, res) => {
 };
 
 const deleteUser = async (req, res) => {
+    //#swagger.tags=['Hellow World]
     const userId = new ObjectId(req.params.id);
     const response = await mongodb.getDatabase().db().collection('users').deleteOne({ _id: userId });
     if (response.deletedCount > 0){
@@ -62,7 +67,7 @@ const deleteUser = async (req, res) => {
 
 };
 
-module.exports = { //exporta
+module.exports = { //exporta 
     getALL,
     getSingle,
     createUser,
