@@ -15,7 +15,7 @@ content-type: application/json
     "lastName": "test5@test.con",
     "email": "Hello5",
     "favoriteColor": "94.121.168.53",
-    "birthday": "2001/11/05"
+    "birthday": "20/11/99"
 }
 
 ### PUT contact 
@@ -27,7 +27,7 @@ content-type: application/json
     "lastName": "test5@test.con",
     "email": "Hello5",
     "favoriteColor": "94.121.168.53",
-    "birthday": "2001/11/05"
+    "birthday": "20/11/99"
 }
 
 ### DELETE contact 
