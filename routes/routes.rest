@@ -11,10 +11,10 @@ POST http://localhost:3001/users HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "test5@example.com",
-    "lastName": "test5@test.con",
-    "email": "Hello5",
-    "favoriteColor": "94.121.168.53",
+    "firstName": "Maho",
+    "lastName": "mendez",
+    "email": "Hello5@test.com",
+    "favoriteColor": "blue",
     "birthday": "20/11/99"
 }
 
@@ -24,9 +24,9 @@ content-type: application/json
 
 {
     "firstName": "Maho",
-    "lastName": "test5@test.con",
-    "email": "Hello5",
-    "favoriteColor": "94.121.168.53",
+    "lastName": "mendez",
+    "email": "Hello5@test.com",
+    "favoriteColor": "blue",
     "birthday": "20/11/99"
 }
 
