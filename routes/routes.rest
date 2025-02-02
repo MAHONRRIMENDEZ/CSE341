@@ -11,7 +11,7 @@ POST http://localhost:3001/users HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Maho",
+    "firstName": "Mahoaaaa",
     "lastName": "mendez",
     "email": "Hello5@test.com",
     "favoriteColor": "blue",
@@ -19,11 +19,11 @@ content-type: application/json
 }
 
 ### PUT contact 
-PUT http://localhost:3001/users/679edb34583a59d2bf31e9c8 HTTP/1.1
+PUT http://localhost:3001/users/679f00b56982d445052cf38c HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Maho",
+    "firstName": "Mahonrri",
     "lastName": "mendez",
     "email": "Hello5@test.com",
     "favoriteColor": "blue",
@@ -31,4 +31,4 @@ content-type: application/json
 }
 
 ### DELETE contact 
-DELETE http://localhost:3001/users/679edb64583a59d2bf31e9c9 HTTP/1.1
+DELETE http://localhost:3001/users/679f00b56982d445052cf38c HTTP/1.1
