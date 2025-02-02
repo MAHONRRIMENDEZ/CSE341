@@ -5,7 +5,7 @@ const app = express(); //  para mantener para gestionar las rutas y
 
 const port = process.env.PORT || 3001; // define un puerto donde escuchará las peticiones
 
-app.use(bodyParser.json());
+app.use(bodyParser.json()); //  configura un servidor para manejar solicitudes HTTP y establece los encabezados necesarios para habilitar el CORS  bodyParser.json()
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
