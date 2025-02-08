@@ -11,8 +11,8 @@ POST http://localhost:3001/users HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Mahoaaaa",
-    "lastName": "mendez",
+    "firstName": "Maho",
+    "lastName": "mendezito",
     "email": "Hello5@test.com",
     "favoriteColor": "blue",
     "birthday": "20/11/99"
@@ -31,4 +31,4 @@ content-type: application/json
 }
 
 ### DELETE contact 
-DELETE http://localhost:3001/users/679f00b56982d445052cf38c HTTP/1.1
+DELETE http://localhost:3001/users/67a6dd777047f1389015332b HTTP/1.1
